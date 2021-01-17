@@ -1,0 +1,33 @@
+﻿@model Entidades.Premios
+@{
+    ViewBag.Title = "AltaPremios";
+    Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2 class="text-white text-center">Alta nuevo Premio</h2>
+<div class="container col-md-6 card">
+    @using ((Html.BeginForm("AltaPremios", "Premios", FormMethod.Post)))
+    {
+        <div class="form-group">
+            <div>
+                @Html.LabelFor(p => p.Competidor.Nombre, "Competidor")
+                @Html.DropDownList("IdCompetidor", ViewBag.Competidores as SelectList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.IdCompetidor, "", new { @class = "text-danger" })
+            </div>
+            <div>
+                @Html.LabelFor(p => p.Año)
+                @Html.EditorFor(premio => premio.Año, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese año" } })
+                @Html.ValidationMessageFor(m => m.Año, "", new { @class = "text-danger" })
+            </div>
+            <div>
+
+                @Html.LabelFor(p => p.CantidadPremios, new { @class = "label" })
+                @Html.EditorFor(premio => premio.CantidadPremios, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ingrese cantidad de premios" } })
+                @Html.ValidationMessageFor(m => m.CantidadPremios, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    }
+
+</div>
+

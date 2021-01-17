@@ -1,0 +1,12 @@
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\bin\Debug\Entidades.dll.config
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\bin\Debug\Entidades.dll
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\bin\Debug\Entidades.pdb
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\bin\Debug\EntityFramework.dll
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\bin\Debug\EntityFramework.SqlServer.dll
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\bin\Debug\EntityFramework.xml
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\bin\Debug\EntityFramework.SqlServer.xml
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\obj\Debug\Entidades.dll
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\obj\Debug\Entidades.pdb
+D:\DIANA\proyectos-git\EA2\EA2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache

@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Bienvenido";
+    Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+    <div class="container">
+        <h1 class="margin text-center text-white">Bienvenido a la evaluación de aprendizaje Nro 2 </h1>
+        <h4> @Html.ActionLink("- Ir a Gestión de Competidores", "ListaCompetidores", "Competidores","", new{@class = "text-dark" })</h4>
+
+        <h4>@Html.ActionLink("- Ir a Gestión de Premios", "ListaPremios", "Premios","", new { @class = "text-dark" })</h4>
+    </div>

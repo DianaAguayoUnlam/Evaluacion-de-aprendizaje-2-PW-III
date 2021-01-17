@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EA2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Competidor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Premios" Relationship="Self.FK_Premios_Premios" FromRole="Competidor" ToRole="Premios" />
+  </EntityType>
+  <EntityType Name="Premios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CantidadPremios" Type="Int32" Nullable="false" />
+    <Property Name="Año" Type="Int32" Nullable="false" />
+    <Property Name="IdCompetidor" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Competidor" Relationship="Self.FK_Premios_Premios" FromRole="Premios" ToRole="Competidor" />
+  </EntityType>
+  <Association Name="FK_Premios_Premios">
+    <End Role="Competidor" Type="Self.Competidor" Multiplicity="1" />
+    <End Role="Premios" Type="Self.Premios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Competidor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Premios">
+        <PropertyRef Name="IdCompetidor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EA2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Competidor" EntityType="Self.Competidor" />
+    <EntitySet Name="Premios" EntityType="Self.Premios" />
+    <AssociationSet Name="FK_Premios_Premios" Association="Self.FK_Premios_Premios">
+      <End Role="Competidor" EntitySet="Competidor" />
+      <End Role="Premios" EntitySet="Premios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,15 @@
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\DAO.dll.config
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\DAO.dll
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\DAO.pdb
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\Entidades.dll
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\EntityFramework.dll
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\EntityFramework.SqlServer.dll
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\Entidades.pdb
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\Entidades.dll.config
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\EntityFramework.xml
+D:\DIANA\proyectos-git\EA2\EA2\DAO\bin\Debug\EntityFramework.SqlServer.xml
+D:\DIANA\proyectos-git\EA2\EA2\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\DIANA\proyectos-git\EA2\EA2\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\DIANA\proyectos-git\EA2\EA2\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\DIANA\proyectos-git\EA2\EA2\DAO\obj\Debug\DAO.dll
+D:\DIANA\proyectos-git\EA2\EA2\DAO\obj\Debug\DAO.pdb

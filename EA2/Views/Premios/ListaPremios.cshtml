@@ -1,0 +1,57 @@
+﻿@model List<Entidades.Competidor>
+@{
+    ViewBag.Title = "ListaPremios";
+    Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<div class="container col-md-8">
+    <h2 class="text-white text-center">Listado de Premios</h2>
+    @Html.ActionLink("Crear nuevo Premio", "AltaPremios", "Premios", new { @class = "btn btn-primary" })
+    @if (Model.Count == 0)
+    {
+        <div class="alert alert-info" role="alert">
+            No se encontraron Premios registrados
+        </div>
+    }
+    else
+    {
+
+        <div class="card">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Año</th>
+                        <th scope="col">Cantidad Premios</th>
+                        <th scope="col">Competidor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Entidades.Competidor competidor in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @foreach (Entidades.Premios premio in competidor.Premios)
+                                {
+
+                                    <p> @premio.Año </p>
+
+                                }
+                            </td>
+                            <td>
+                                @foreach (Entidades.Premios premio in competidor.Premios)
+                                {
+                                    <p> @premio.CantidadPremios </p>
+                                }
+                            </td>
+                            <td>@competidor.Nombre</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+
+
